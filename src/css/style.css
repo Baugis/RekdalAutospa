@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+
+
 /* Universal */
 body {
   background-color: #19161B;
@@ -97,6 +99,12 @@ nav {
   transition: width 0.3s ease-out;
 }
 
+@media only screen and (max-width: 991px) {
+  .nav-link::before {
+    left: 0
+  }
+}
+
 .nav-item:hover .nav-link::before {
   width: 40px;
   transition: width 0.2s ease-out;
@@ -123,6 +131,12 @@ nav {
   left: 10px;
   transition: width 0.3s ease-out;
 } */
+
+@media only screen and (max-width: 991px) {
+  .active::before {
+    left: 0;
+  }
+}
 
 /* Footer */
 footer {
@@ -298,8 +312,57 @@ footer {
   top: -28px;
 }
 
+@media only screen and (max-width: 991px) {
+  .historieElementer h3::before {
+    display: none;
+  }
+}
+
 
 /* Own Bootstrap */
 .opacity-87 {
   opacity: 87%;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  border: none !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+form label {
+  color: white;
+  font-weight: 300;
+}
+
+.form-control {
+  background-color: #19161B;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 2px;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: #19161B;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+}
+
+input {
+  color: white !important;
 }
