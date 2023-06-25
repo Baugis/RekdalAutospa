@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekdal Autospa</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark px-3 py-3" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index">Rekdal Autospa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index">Hjem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tjenester">Tjenester</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./prisliste">Prisliste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./omoss">Om oss</a>
+                        </li>
+                        <li class="nav-item active ms-auto">
+                            <a href="./kontakt" class="nav-link">Ta kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mb-5">
+            <div class="row justify-content-between" style="margin-top: 100px;">
+                <div class="col-12 col-lg-7 mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                    <h1 class="sectionHeader" style="font-size: 16px !important;">Kontakt oss</h1>
+                    <h2 class="opacity-87">Har du noen spørsmål? Send oss en melding</h2>
+                    <p>Vi vil komme tilbake til deg innen 24 timer</p>
+                    <form class="form-group" action="https://formsubmit.co/b9fcfb32a86030af0a47d32e23b8b512"
+                        method="POST">
+                        <label for="name">Fornavn</label>
+                        <input class="form-control mb-4" type="text" name="fornavn" id="name" required>
+                        <label for="email">E-post</label>
+                        <input class="form-control mb-4" type="email" name="email" id="email" required>
+                        <label for="emne">Emne</label>
+                        <input class="form-control mb-4" type="text" name="emne" id="emne" required>
+                        <label for="text">Melding</label>
+                        <textarea class="form-control mb-4" name="tekst" id="text" rows="7" style="width: 100%;"
+                            placeholder="Skriv meldingen din her" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg">Send melding</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-lg-5 d-none d-xl-block mt-5 mt-lg-0">
+                    <div class="row h-75 mt-5 justify-content-between omOssBilder">
+                        <div class="col-6 d-flex justify-content-center">
+                            <img src="./src/img/bil-1.jpg" alt="En rød bil" class="img-fluid h-100 mt-3">
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <img src="./src/img/bil-2.jpg" alt="En til rød bil" class="img-fluid h-100"
+                                style="margin-top: -30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lokasjon -->
+        <div class="container">
+            <div class="row gx-0 h-100 mb-5">
+                <div class="col-12 col-lg-4 lokasjonText d-flex flex-column justify-content-between">
+                    <div class="lokasjonTextSection">
+                        <p class="fs-5 mb-0 text-white">Åpningstider</p>
+                        <p class="mb-0">Mandag til Fredag</p>
+                        <p>08:00 til 16:30</p>
+                    </div>
+                    <div class="lokasjonTextSection">
+                        <p class="fs-5 mb-0 text-white">Adresse</p>
+                        <p class="mb-0">Hadelandsvegen,</p>
+                        <p>2105 Lunner</p>
+                    </div>
+                    <div class="lokasjonTextSection">
+                        <p class="fs-5 mb-0 text-white">Kontakt oss</p>
+                        <p class="mb-0">+47 480 01 678,</p>
+                        <p>rekdal.autospa@outlook.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.6720458266582!2d10.60130947722704!3d60.30195123279082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641a34b130b1a6d%3A0x15c4ac3b2daef197!2sRekdal%20AutoSpa!5e0!3m2!1sno!2sno!4v1687600778852!5m2!1sno!2sno"
+                        style="border:0; width: 100%; height: 100%; opacity: 50%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <div class="row mt-5 mb-1">
+                    <div class="col-12 d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" aria-current="page" href="#">Hjem</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Tjenester</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Prisliste</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#">Om oss</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4 pb-4">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-instagram fa-lg text-white mx-2"></i>
+                    <i class="fa-brands fa-facebook fa-lg text-white mx-2"></i>
+                    <i class="fa-brands fa-youtube fa-lg text-white mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JS -->
+    <script src="./src/js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
