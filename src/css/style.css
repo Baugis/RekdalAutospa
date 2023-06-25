@@ -229,7 +229,21 @@ footer {
 }
 
 .prosjekterBox {
-  height: 350px;
+  position: relative;
+  transition: all .3s;
+}
+
+.prosjekterBox:hover > .prosjekterBoxHover {
+  display: block;
+}
+
+.prosjekterBoxHover {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 .prosjekterBox img {
